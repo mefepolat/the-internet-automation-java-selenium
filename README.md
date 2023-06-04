@@ -9,6 +9,9 @@ The project is structured as follows:
 |   |-- main
 |   |   |-- java
 |   |   |   |-- pages
+|               |-- HomePage.java
+|               |-- LoginPage.java
+|               |-- ...
 |   |   |-- resources
 |   |
 |   |-- test
