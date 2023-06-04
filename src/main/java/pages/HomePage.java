@@ -43,6 +43,11 @@ public class HomePage {
         return new KeyPressesPage(driver);
     }
 
+    public AlertsPage clickAlertsLink(){
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
+
     public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
