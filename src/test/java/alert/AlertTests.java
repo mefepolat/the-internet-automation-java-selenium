@@ -40,4 +40,12 @@ public class AlertTests extends BaseTests {
         alertPage.acceptAlert();
         assertEquals(alertPage.getResultMessage(), "You entered: a message", "Result message is incorrect!");
     }
+
+    @Test
+    public void dismissPrompt(){
+        var alertPage = homePage.clickAlertsLink();
+        alertPage.triggerPromptButton();
+        alertPage.cancelAlert();
+        assertEquals(alertPage.getResultMessage(), "You entered: null", "Result message is incorrect!");
+    }
 }

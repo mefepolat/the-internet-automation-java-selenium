@@ -48,6 +48,11 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
+    public FileUploadPage clickFileUploadLink(){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
     public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
