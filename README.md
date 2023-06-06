@@ -54,7 +54,7 @@ Follow these steps to run the automation tests:
 ##Writing Test Cases
 To create new test cases or modify existing ones, follow these guidelines:
 
-- Create a new Java class under src/test/java/com.example.tests or add your test cases to an existing class.
+- Create a new Java class under src/test/java/ or add your test cases to an existing class.
 - Use the TestNG annotations (@Test, @BeforeMethod, @AfterMethod, etc.) to define your test methods and set up/tear down steps.
 - Leverage Selenium WebDriver API to interact with the web elements on the website under test.
 - Implement assertions to verify the expected outcomes of your test cases.
