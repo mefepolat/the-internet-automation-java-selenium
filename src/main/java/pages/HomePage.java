@@ -43,6 +43,11 @@ public class HomePage {
         return new KeyPressesPage(driver);
     }
 
+    public ContextMenuPage clickContextMenuLink(){
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
     public AlertsPage clickAlertsLink(){
         clickLink("JavaScript Alerts");
         return new AlertsPage(driver);
